@@ -1,0 +1,10 @@
+# Changelog
+
+## [1.0.1] - 2023 - 09 - 16 
+
+### add
+
+- aggiunto programma sync.py
+- aggiunto changelog.txt
+- aggiunto README.md
+- aggiunto trace.log
