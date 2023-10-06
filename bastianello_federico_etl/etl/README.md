@@ -11,9 +11,9 @@ Invece, se al programma allinea.cmd si passa come parametro dopo, sync.py produr
 - moduli per python non standard come:
 
 |_nome_|        |_versione_|
-matplotlib         3.8.0
-numpy              1.25.0
-pandas             2.1.1
+- matplotlib         3.8.0
+- numpy              1.25.0
+- pandas             2.1.1
 (fare riferimento al file requirements.txt)
 ## Esecuzione
 Eseguire il programma da terminale passando come parametro al file allinea.cmd il parametro prima oppure dopo
