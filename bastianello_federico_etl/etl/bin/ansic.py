@@ -49,27 +49,28 @@ elif operative_system == "Linux":
 def help_C(): # funzione aiuto, da una lista di tutte le cose che questa libreria permette di fare
     stringa = """
                     |__ elenco funzioni __|        
-printf(str1, str2) -> stampa stringa formattata
-strlen(str1)       -> ritorna la lunghezza di una stringa
-strcat(str1, str2) -> ritorna la concatenazione di due stringhe
-strcmp(str1, str2) -> ritorna la stringa piu grande
-perror(str1)       -> stampa un messaggio di errore
-f_exist(str1)      -> verifica che un file esista
-system(str1)       -> esegue la stringa str1 su shell
-_exit(int)         -> interruzione forzata del programma
+printf(str1, str2)   -> stampa stringa formattata
+strlen(str1)         -> ritorna la lunghezza di una stringa
+strcat(str1, str2)   -> ritorna la concatenazione di due stringhe
+strcmp(str1, str2)   -> ritorna la stringa piu grande
+perror(str1)         -> stampa un messaggio di errore
+f_exist(str1)        -> verifica che un file esista
+system(str1)         -> esegue la stringa str1 su shell
+_exit(int)           -> interruzione forzata del programma
+fprintf(FILE*, strf) -> scrittura su file
                     |__ elenco macro __|
-EXIT_SUCCESS       -> uscita da funzione correttamente, 1
-EXIT_FAILURE       -> uscita da funzione con errore, 0
-void               -> None
-NULL               -> ha valore 0
-__unix__           -> NULL se il s.o. in cui si esegue il programma non e' unix-like, ritorna 1 se il s.o. corrisponde
-__MacOs__          -> NULL se il s.o. in cui si esegue il programma non e' MacOs, ritorna 1 se il s.o. corrisponde
-__WIN__            -> NULL se il s.o. in cui si esegue il programma non e' windows, ritorna 1 se il s.o. corrisponde
-__DATE__           -> Data di esecuzione del file sorgente nella forma "yyyy-mm-dd" 
-__TIME__           -> Ora di esecuzione del file sorgente nella forma "hh:mm:ss"
-__TIMESTAMP__      -> Data e ora di esecuzione del file
-__FILE__           -> nome corrente del file che si sta eseguendo
-__STDC__           -> versione python"""
+EXIT_SUCCESS         -> uscita da funzione correttamente, 1
+EXIT_FAILURE         -> uscita da funzione con errore, 0
+void                 -> None
+NULL                 -> ha valore 0
+__unix__             -> NULL se il s.o. in cui si esegue il programma non e' unix-like, ritorna 1 se il s.o. corrisponde
+__MacOs__            -> NULL se il s.o. in cui si esegue il programma non e' MacOs, ritorna 1 se il s.o. corrisponde
+__WIN__              -> NULL se il s.o. in cui si esegue il programma non e' windows, ritorna 1 se il s.o. corrisponde
+__DATE__             -> Data di esecuzione del file sorgente nella forma "yyyy-mm-dd" 
+__TIME__             -> Ora di esecuzione del file sorgente nella forma "hh:mm:ss"
+__TIMESTAMP__        -> Data e ora di esecuzione del file
+__FILE__             -> nome corrente del file che si sta eseguendo
+__STDC__             -> versione python"""
     print(stringa)
 
 
