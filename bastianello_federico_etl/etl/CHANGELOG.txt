@@ -1,0 +1,35 @@
+# Changelog
+
+## [1.3.2] - 2023 - 10 - 07 
+
+### modified
+
+- aggiornato libreria ansic.py
+- aggiornato programma sync.py
+- sostituito il file trace.log con il file trace.csv
+- aggiornato README.md
+- aggiornato CHANGELOG.txt
+
+
+## [1.3.1] - 2023 - 10 - 03 
+
+### modified
+
+- aggiunto file requirements.txt
+- aggiornato programma sync.py
+- creato modulo ansic.py
+- aggiunta directory analisi
+- aggiunta directory bat
+- creato programma allinea.cmd
+- aggiornato README.md
+- aggiornato trace.log
+
+
+## [1.0.1] - 2023 - 09 - 16 
+
+### add
+
+- aggiunto programma sync.py
+- aggiunto CHANGELOG.txt
+- aggiunto README.md
+- aggiunto trace.log
