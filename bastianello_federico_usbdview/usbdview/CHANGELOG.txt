@@ -1,0 +1,22 @@
+# changelog
+
+
+## [1.0.1] - 2023 - 11 - 19 
+
+### add
+
+- aggiunto dir bin/
+- aggiunto modulo ansic.py
+- aggiunto programma sync.py
+- aggiunto programma usbdview.py
+- aggiunto dir flussi/
+- aggiunto dir log/
+- aggiunto trace.log
+- aggiunto trace_bat.txt
+- aggiunto dir bat/
+- aggiunto run.bat
+- aggiunto datenowunixtime.bat
+- aggiunto dir analisi/
+- aggiunto CHANGELOG.txt
+- aggiunto README.md
+
