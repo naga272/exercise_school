@@ -1,0 +1,21 @@
+# changelog
+
+## version [1.0.1] - 07 / 01 / 2024
+
+### added
+
+- /log/
+- /flussi/
+
+- /CHANGELOG.txt
+- /README.md
+
+- /bin/
+- /bin/main.py
+- /bin/Scooter.pyx
+
+- /requirements.txt
+
+- /analisi/
+- /bat/
+
