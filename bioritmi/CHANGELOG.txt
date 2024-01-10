@@ -1,0 +1,20 @@
+# changelog
+
+## version [1.0.1] - 10 / 01 / 2024
+
+### add
+
+- /analisi/
+- /analisi/page.html
+- /flussi/
+- /flussi/alunni_4aa.csv
+- /bat/
+- /bat/run.bat
+- /log/
+- /log/trace.csv
+- /bin/
+- /bin/main.py
+- /bin/stdhtml.py
+- README.md
+- CHANGELOG.txt
+- requirements.txt
