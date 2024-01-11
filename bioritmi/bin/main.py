@@ -152,19 +152,19 @@ if __name__ == "__main__":
     programma assembly (per compilatore nasm) architettura x64bit Kali Linux:
 
     section .data       ; dichiarazione variabili
-        result db 1
+        result db 1     ; assegno alla variabili result il valore di uscita 1
 
     section .text
         global _start   ; indica che il programma parte da _start
 
     _start:             ; equivalente dell'if __name__ == __main__
         call main
-        mov result, rax ; assegno a result il valore di uscita da main 
+        mov [result], rax ; assegno a result il valore di uscita da main 
 
 
     ; il pezzo che segue ora sara la preparazione della funzione sys.exit(result)
     _exit:  mov rax, 60         ; codice per chiamata di sistema
-            mov rdi, result     ; rappresenta il valore di result (quindi 0)
+            mov rdi, [result]   ; rappresenta il valore di result (quindi 0)
             syscall             ; chiamata di sistema (il programma termina in questo punto)
 
 
