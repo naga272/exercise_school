@@ -29,6 +29,7 @@ Tuttavia, non si garantisce la corretta esecuzione del programma, non potendo te
 
 ## execution
 dipende dal sistema operativo:
+
     - Linux:    eseguire il programma /bat/run.sh
     - Windows:  eseguire il programma /bat/run.bat 
 
