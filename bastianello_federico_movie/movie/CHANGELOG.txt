@@ -1,0 +1,20 @@
+# changelog
+
+## Version [1.0.1] - 09 / 02 / 2024
+
+### add
+
+- /bat/run.sh 
+- /bat/run.bat
+
+- /CHANGELOG.txt
+- /README.md
+
+- /bin/main.py
+- /bin/module/converter.pyx
+- /bin/module/setup.py
+- /bin/module/error_32.asm
+- /bin/module/error_64.asm
+
+- /flussi/movies_metadata.csv
+- /log/trace.csv
