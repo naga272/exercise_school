@@ -23,6 +23,8 @@ Il compilatore nasm può essere scaricato sul sito [nasm.us](https://www.nasm.us
 
 Una volta scaricato nasm e ld bisogna andare nella directory /bin/ e scrivere il comando da cmd:
 -	python setup.py build_ext --inplace
+
+
 Tuttavia, non si garantisce la corretta esecuzione del programma, non potendo testarlo su Windows.
 
 ## execution
