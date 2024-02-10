@@ -22,7 +22,7 @@ Per o.s. Windows:
 Il compilatore nasm può essere scaricato sul sito [nasm.us](https://www.nasm.us), invece il linker ld può essere scaricato sul sito [GnuWin](https://gnuwin32.sourceforge.net/packages/ld.htm) (NB: sia ld che nasm devono essere inclusi nella PATH per far funzionare il programma).
 
 Una volta scaricato nasm e ld bisogna andare nella directory /bin/ e scrivere il comando da cmd:
--	python setup.py build_ext --inplace
+	- python setup.py build_ext --inplace
 
 
 Tuttavia, non si garantisce la corretta esecuzione del programma, non potendo testarlo su Windows.
