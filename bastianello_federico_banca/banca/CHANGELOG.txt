@@ -1,5 +1,12 @@
 # changelog
 
+## version [1.0.2] - 05 / 05 / 2024
+
+### added
+
+- modifcato CHANGELOG.txt
+- modificato README.md
+
 ## version [1.0.1] - 02 / 03 / 2024
 
 ### add
