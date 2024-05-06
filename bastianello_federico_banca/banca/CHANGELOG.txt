@@ -1,0 +1,15 @@
+# changelog
+
+## version [1.0.1] - 02 / 03 / 2024
+
+### add
+
+- /bin/
+- /bin/banca.py
+- /bin/main.py
+- /flussi/
+- /log/
+- /log/trace.csv
+- CHANGELOG.txt
+- ClassiEreditarietaContiBancariPython.pdf
+- README.md
