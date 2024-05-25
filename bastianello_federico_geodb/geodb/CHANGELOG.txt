@@ -1,0 +1,22 @@
+# changelog
+
+## version [1.0.1] - 13 / 05 / 2024
+
+### added
+
+- ./CHANGELOG.txt
+- ./README.md
+- ./requirements.txt
+
+- ./db/
+- ./db/geodb.db
+
+- ./flussi/
+- ./flussi/location_alt.csv
+
+- ./log/
+- ./log/trace.db
+
+- ./bin/
+- ./bin/main.py
+- ./bin/log.py
