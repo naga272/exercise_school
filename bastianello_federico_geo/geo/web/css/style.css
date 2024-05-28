@@ -1,0 +1,43 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    margin:0px;
+    padding:0;
+    top:0;
+}
+
+
+table, td{
+    border:1px solid black;
+}
+
+
+.topbar{
+    top:0;
+    position:fixed;
+    width:100%;
+    padding-top:1%;
+    padding-bottom:1%;
+    background-color: black;
+    color:#fff;
+}
+
+
+.topbar a{
+    color:#fff;
+    transition:all .7s;
+    margin-left: 3%;
+}
+
+
+.topbar a:hover{
+    color:burlywood;
+}
+
+
+main{
+    margin-top: 5%;
+    justify-content: center;
+    text-align:center;
+    padding:2%;
+}

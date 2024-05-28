@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<locations>
+	<location>
+		<citta>Polsa</citta>
+		<altitudine>1215.0</altitudine>
+	</location>
+	<location>
+		<citta>Rovereto</citta>
+		<altitudine>193.0</altitudine>
+	</location>
+	<location>
+		<citta>Malga Castelberto Lessinia (Erbezzo)</citta>
+		<altitudine>1760.0</altitudine>
+	</location>
+</locations>
