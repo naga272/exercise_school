@@ -29,7 +29,7 @@ def detect_encoding_file(file_path: str) -> str:
         return result["encoding"]
 
 
-def find_column(df: object) -> str:
+def find_column(df: object) ->  Tuple[str, str]:
     """
         Funzione che analizza l'intestazione delle colonne (cerca Nome attività e Ultimo esito)
     """
