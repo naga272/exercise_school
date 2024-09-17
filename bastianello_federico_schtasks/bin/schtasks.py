@@ -6,7 +6,7 @@ import sys
 
 
 def check_par() -> Tuple[int, List[str]]:
-
+    # funzione per controllare il passaggio dei parametri da cli 
     if len(sys.argv) != 3:
         Log().logMe("Errore durante il passaggio di parametri da cli")
         Log().logMe("Programma terminato con valore: 1")
@@ -79,7 +79,7 @@ def main(argc:int, argv:list) -> int:
 if __name__ == "__main__":
     Log().logMe("Programma avviato")
     
-    argc, argv = check_par() # funzione per controllare il passaggio dei parametri da cli 
+    argc, argv = check_par() 
     result = main(argc, argv)
 
     Log().logMe(f"Programma terminato con valore: {result}")
