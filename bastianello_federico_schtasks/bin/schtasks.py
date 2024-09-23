@@ -47,6 +47,20 @@ def find_column(df: object) ->  Tuple[str, str]:
     return nome_attivita_col, esito_col
 
 
+def get_intestazione(df) -> str:
+    strings = ""
+    for columns in df.columns:
+        if columns != df.columns[len(df.columns) - 1]:
+            strings += "[" + columns + "], "
+        else:
+            strings += "[" + columns + "]"
+    return strings
+
+
+def get_row(row) -> str:
+    return ', '.join(f"\'" + str(value).replace("'", "_") + "\'" for value in row.values)
+
+
 def main(argc:int, argv:list) -> int:
     df_in = pd.read_csv(argv[1], sep = ",", encoding = detect_encoding_file(argv[1]))
 
@@ -56,10 +70,8 @@ def main(argc:int, argv:list) -> int:
         Log().logMe("Errore durante l'esecuzione del programma, campi del dataframe non trovati")
         return 1
 
-    # converto tutti i valori della colonna Ultimo esito in valori interi (prima sono stringhe) 
-    df_in[nome_esito_col] = pd.to_numeric(df_in[nome_esito_col], errors='coerce')
     # Filtra il DataFrame per trovare le righe che contengono '\\Microsoft\\Windows' nel nome dell'attività e che hanno un esito diverso da 0
-    df_filtrato = df_in[(df_in[nome_attivita_col].str.contains(r'\\Microsoft\\Windows')) & (df_in[nome_esito_col] != 0)]
+    df_filtrato = df_in[(df_in[nome_attivita_col].str.contains(r'\\Microsoft\\Windows')) & (df_in[nome_esito_col] != "0")]
 
     with open(argv[2], "w") as f_out:
         # per dare contesto al file csv scrivo che cosa indicano i campi del csv
@@ -72,6 +84,10 @@ def main(argc:int, argv:list) -> int:
             # row rappresenta la singola riga del df
             row_str = ','.join(str(value) for value in row.values) # Converto la riga in una stringa separata da virgole
             f_out.write(f"{row_str}\n")
+            
+            with open("./tasks.sql", "w") as fsql:
+                fsql.write(f"INSERT INTO t_tasks ({get_intestazione(df_filtrato)})\n")
+                fsql.write(f"VALUES ({get_row(row)});\n\n")
 
     return 0
 
