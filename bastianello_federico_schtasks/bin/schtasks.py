@@ -76,7 +76,7 @@ def main(argc:int, argv:list) -> int:
     with open(argv[2], "w") as f_out:
         # per dare contesto al file csv scrivo che cosa indicano i campi del csv
         intestazione = ",".join(name_column for name_column in df_in.columns)
-        f_out.write(intestazione)   
+        f_out.write(intestazione)  
 
         for _, row in df_filtrato.iterrows():
             # df_filtrato.iterrows() restituisce le righe del Dataframe sottoforma di tuple (indice, riga)
@@ -84,11 +84,11 @@ def main(argc:int, argv:list) -> int:
             # row rappresenta la singola riga del df
             row_str = ','.join(str(value) for value in row.values) # Converto la riga in una stringa separata da virgole
             f_out.write(f"{row_str}\n")
-            
-            with open("./tasks.sql", "w") as fsql:
-                fsql.write(f"INSERT INTO t_tasks ({get_intestazione(df_filtrato)})\n")
-                fsql.write(f"VALUES ({get_row(row)});\n\n")
 
+            with open("./tasks.sql", "w") as fsql:
+                for _, row in df_filtrato.iterrows():
+                    fsql.write(f"INSERT INTO t_tasks ({get_intestazione(df_filtrato)})\n".replace("�", ""))
+                    fsql.write(f"VALUES ({get_row(row)});\n\n".replace("�", ""))
     return 0
 
 
