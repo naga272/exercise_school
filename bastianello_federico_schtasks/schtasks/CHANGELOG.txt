@@ -1,0 +1,22 @@
+
+# CHANGELOG
+
+## version [1.0.2] - 03 / 10 / 2024
+
+### added
+
+- aggiornato schtasks.py
+
+
+## version [1.0.1] - 16 / 09 / 2024
+
+### added
+
+- schtasks.py
+- schtasks.bat
+- log.py
+- CHANGELOG.txt
+- README.md
+- tasks.csv
+- tasks_filter.csv
+- trace.db
