@@ -1,0 +1,18 @@
+# changelog
+
+## add
+
+- ./bin/utility/networkAdapter.py
+- ./bin/utility/product.py
+- ./bin/utility/diskdrive.py
+- ./bin/utility/log.py
+- ./bin/utility/
+- ./bin/main.py
+- ./bin/
+- ./flussi/wmi.db
+- ./flussi/
+- ./log/trace.db
+- ./log/
+- ./requirements.txt
+- ./README.md
+- ./CHANGELOG.txt
