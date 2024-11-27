@@ -1,0 +1,16 @@
+# changelog
+
+## version [1.0.1] - 08 / 04 / 2024
+
+### added
+
+- ./CHANGELOG.txt
+- ./README.md
+
+- ./bin/
+- ./bin/meteo.py
+
+- ./flussi/
+- ./flussi/citta.csv
+- ./flussi/meteo.csv
+- ./flussi/meteo.json
