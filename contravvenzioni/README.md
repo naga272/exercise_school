@@ -1,5 +1,11 @@
 # Contravvenzioni
 
+![Language](https://img.shields.io/badge/Spellcheck-Pass-green?style=flat)
+![Platform](https://img.shields.io/badge/OS%20platform%20supported-Windows-blue?style=flat)
+![Language](https://img.shields.io/badge/Language-Python-yellowgreen?style=flat) 
+![Testing](https://img.shields.io/badge/PEP8%20CheckOnline-Passing-green)
+![Testing](https://img.shields.io/badge/Test-Pass-gree)
+
 ## Descrizione
 
 Programma Python che quando (mentre il server è attivo) apre una pagina web in automatico portandoti alla shermata per fare le contravvenzioni. Se il serve non è online, il programma aprirà una shell stile prompt, dove è possibile inserire dei comandi.
