@@ -36,7 +36,6 @@ def push_in_db(argc: int, argv: list):
     if "--help" in argv:
         return command_list["push_in_db"]["flags"]["--help"]
 
-    # Verifica che il numero di argomenti sia corretto
     if argc != 6:  #  6 perche' e' escluso il comando
         return f"""
         Errore: numero di argomenti non valido (inseriti solo {argc}).
@@ -45,15 +44,12 @@ def push_in_db(argc: int, argv: list):
         """
 
     try:
-
-
-        # Estrai i valori dagli argomenti
-        matricola       = str(argv[0])  # deve essere di tipo str
-        targa           = str(argv[1])  # deve essere di tipo str
-        luogo           = str(argv[2])  # deve essere di tipo str
-        datetime        = str(argv[3])  # deve essere di tipo str
-        tipo_infrazione = str(argv[4])  # deve essere di tipo str
-        importo         = float(argv[5])  # Converti l'importo in un float
+        matricola       = str(argv[0])
+        targa           = str(argv[1]) 
+        luogo           = str(argv[2])
+        datetime        = str(argv[3]) 
+        tipo_infrazione = str(argv[4])
+        importo         = float(argv[5])
 
         # Verifica se il VigileDB esiste già nel database
         vigile = session.query(VigileDB).filter_by(matricola = matricola).first()
@@ -73,15 +69,14 @@ def push_in_db(argc: int, argv: list):
 
         # Crea una nuova contravvenzione
         nuova_contravvenzione = ContravvenzioneDB(
-            vigile_id=vigile.matricola,  # Uso la matricola del VigileDB esistente o appena creato
-            auto_id=auto.targa,  # Uso la targa dell'AutoDB esistente o appena creato
-            luogo=luogo,
-            datetime=datetime,
-            tipo_infrazione=tipo_infrazione,
-            importo=importo
+            vigile_id               = vigile.matricola,  # Uso la matricola del VigileDB esistente o appena creato
+            auto_id                = auto.targa,          # Uso la targa dell'AutoDB esistente o appena creato
+            luogo                   = luogo,
+            datetime              = datetime,
+            tipo_infrazione    = tipo_infrazione,
+            importo               = importo
         )
 
-        # Aggiungi la contravvenzione al database
         session.add(nuova_contravvenzione)
         session.commit()
 
@@ -94,7 +89,7 @@ def push_in_db(argc: int, argv: list):
         session.rollback()  # Annulla la transazione in caso di errore
         return f"Errore durante l'inserimento della contravvenzione: {e}"
 
-    return ''
+    return 'dati salvati correttamente!\n'
 
 
 def clear(argc: int, argv: list):
