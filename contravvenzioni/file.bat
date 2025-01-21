@@ -1,1 +1,0 @@
-python.exe contravvenzioni/manage.py runserver 
