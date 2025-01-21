@@ -12,7 +12,7 @@ Programma Python che quando (mentre il server è attivo) apre una pagina web in 
 
 ## Requisiti
 
-- Python >= 3.10
+- Python >= 3.12
 - librerie secondarie (vedi requirements.txt)
 
 ## Esecuzione
