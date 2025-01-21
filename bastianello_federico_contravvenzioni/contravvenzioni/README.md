@@ -24,15 +24,38 @@ Dopodichè, avviare il programma main.py, che in automatico se rileva il server 
 - **Shell**: Nel caso in cui il programma non trova il server web Django, avvia una shell locale stile prompt dei comandi. Per aggiungere una contravvenzione bisogna scrivere il seguente comando per la shell:
 
 ```bash
->>> push_in_db 19290 WA231AF "Via Pluto" 12/24/33 "Eccesso di Velocita" 125.23
+>>> contravvenzione 19290 WA231AF MIOCODICEFISCALE "Via Pluto" 12/24/33 "Eccesso di Velocita" 125.23
 ```
-ogni argomento del comando push_in_db corrisponde a un campo della tabella Contravvenzioni:
+ogni argomento del comando contravvenzione corrisponde a un campo della tabella Contravvenzioni:
 
 | matricola | targa         | cod_fisc    | luogo         | datetime                    | tipo_infrazione  | importo |
 | ------------ | ------------- | -------------- | -------------- | ---------------------------- | ---------------------------- |-----------|
 | 19290     | WA231AF | AHBWIDV | "Via Pluto" | 12/24/33                    | "Eccesso di Velocita" | 125.23 |
 
 Ovviamente, dato che se è attiva questa shell il server online è down, allora i dati verranno memorizzati in un db locale (così si possono aggiungere più tardi quando ritorna on il server).
+
+
+```bash
+>>> push_vigile 19290 nome cognome
+```
+Consente l'inserimento di una nuova tupla all'interno della tabella vigile. Gli argomenti sono: matricola, nome, cognome
+
+
+```bash
+>>> push_auto traga colore
+```
+Consente l'inserimento di una nuova tupla all'interno della tabella Auto. Gli argomenti sono: targa, colore
+
+```bash
+>>> clear traga colore
+```
+consente la pulizia del terminale
+
+
+```bash
+>>> exit
+```
+consente la chiusura del terminale
 
 
 ## Note del programmatore
