@@ -28,9 +28,9 @@ Dopodichè, avviare il programma main.py, che in automatico se rileva il server 
 ```
 ogni argomento del comando push_in_db corrisponde a un campo della tabella Contravvenzioni:
 
-| vigile_id | auto_id | luogo | datetime | tipo_infrazione | importo |
-| --------- | ------- | ----- | -------- | --------------- | ------- |
-| 19290     | WA231AF | "Via Pluto" | 12/24/33 | "Eccesso di Velocita" | 125.23 |
+| matricola | targa         | cod_fisc    | luogo         | datetime                    | tipo_infrazione  | importo |
+| ------------ | ------------- | -------------- | -------------- | ---------------------------- | ---------------------------- |-----------|
+| 19290     | WA231AF | AHBWIDV | "Via Pluto" | 12/24/33                    | "Eccesso di Velocita" | 125.23 |
 
 Ovviamente, dato che se è attiva questa shell il server online è down, allora i dati verranno memorizzati in un db locale (così si possono aggiungere più tardi quando ritorna on il server).
 
