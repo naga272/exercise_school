@@ -1,0 +1,13 @@
+# changelog
+
+## version [1.0.1]
+
+### added
+
+- main.py
+- sito django website
+- programma shell
+- README.md
+- CHANGELOG.txt
+- requirements.txt
+- file.bat
