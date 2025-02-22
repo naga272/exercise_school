@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CMDB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bastianello Federico">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
+            }
+            main{
+                width: 100%
+            }
+            main div{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <main style="width:100%">
+        <div>
+            <h1 style="text-align: center;">CMDB</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome PC</th>
+                        <th>Timestamp</th>
+                        <th>OS</th>
+                        <th>Dischi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for agent in agents %}
+                    <tr>
+                        <td>{{ agent.pcname }}</td>
+                        <td>{{ agent.timestamp }}</td>
+                        <td>{{ agent.os }}</td>
+                        <td>
+                            <ul>
+                                {% for disk in agent.disks.all %}
+                                    <li>{{ disk.disk_name }} - {{ disk.size_disk }} bytes - {{ disk.disk_free }} bytes</li>
+                                {% empty %}
+                                    <li>Nessun disco rilevato</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</html>
