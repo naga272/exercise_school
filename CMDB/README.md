@@ -24,11 +24,10 @@ Ora il sito è disponibile all'indirizzo: **http://127.0.0.1:8000/**
 La homepage mostra un riepilogo dello storico dello spazio disponibile sui dischi del server.
 
 Dati mostrati:
-- Nome del disco
-- Spazio totale
-- Spazio usato
-- Spazio libero
-- Percentuale di utilizzo
+- Nome pc
+- Timestamp
+- Os
+- info dischi
 
 ### Pagina `/services/` - Servizi in ascolto
 Questa pagina elenca tutti i processi che stanno ascoltando sulle porte di rete.
