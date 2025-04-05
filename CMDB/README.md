@@ -1,4 +1,4 @@
-# CMDB e Servizi di Rete
+# CMDB, Servizi di Rete e monitoraggio log
 
 ## Descrizione
 Questo progetto è un'applicazione web realizzata con Django che fornisce informazioni sullo stato del server, in particolare:
