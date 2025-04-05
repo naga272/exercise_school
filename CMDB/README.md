@@ -4,6 +4,7 @@
 Questo progetto è un'applicazione web realizzata con Django che fornisce informazioni sullo stato del server, in particolare:
 - **Monitoraggio dello spazio su disco** (visibile nella homepage `/`)
 - **Elenco dei servizi in ascolto sulle porte di rete** (visibile alla pagina `/services/`)
+- **Elenco dei log presenti nel file access.log di XAMPP** (visibile alla pagina `/access.log`)
 
 ## Requisiti
 
