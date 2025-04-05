@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>services</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bastianello Federico">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
+            }
+            main{
+                width: 100%;
+                text-align: center;
+            }
+
+            main div {
+                width: 100%;
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 style="text-align:center">Access Log Analysis</h1>
+            <br>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Path</th>
+                            <th>Request Type</th>
+                            <th>Response</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for element in logs %}
+                        <tr>
+                            <td>{{ element.timestamps }}</td>
+                            <td>{{ element.percorso }}</td>
+                            <td>{{ element.type_request }}</td>
+                            <td>{{ element.answer_request }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+        </main>
+    </body>
+</html>
