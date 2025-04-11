@@ -1,0 +1,15 @@
+# changelog
+
+
+## version [2.0.1]
+
+### added
+
+- pagina web per visualizzare i servizi attivi del server
+
+
+## version [1.0.1]
+
+### added
+
+- pagina web per visualizzare lo spazio libero nei dischi del server

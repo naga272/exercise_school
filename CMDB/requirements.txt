@@ -1,0 +1,5 @@
+Django==5.0.7
+psutil==6.1.0
+SQLAlchemy==2.0.31
+WMI==1.5.1
+pywin32==307
