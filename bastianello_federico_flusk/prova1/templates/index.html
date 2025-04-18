@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Hello World!</title>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content='width=device-width, initial-scale=1.0'>
+		<meta name="author" content="Bastianello Federico">
+		<style></style>
+
+	</head>
+	<body>
+		<h1>Utenti</h1>
+		<ul>
+		{% for utente in utenti %}
+		<li>{{ utente["nome"] }} - {{ utente["email"] }}</li>
+		{% endfor %}
+		</ul>
+	</body>
+</html>
